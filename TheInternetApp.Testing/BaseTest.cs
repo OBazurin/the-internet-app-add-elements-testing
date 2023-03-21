@@ -1,15 +1,10 @@
 namespace TheInternetApp.Testing;
 
-public class BaseTest
+public abstract class BaseTest
 {
     protected IWebDriver Driver => DriverHandler.Driver;
+    protected AddRemoveElementsPage AddRemoveElementsPage => new AddRemoveElementsPage();
     
-    [SetUp]
-    public void Setup()
-    {
-        Driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/add_remove_elements/");
-    }
-
     [TearDown]
     public void TearDown()
     {
