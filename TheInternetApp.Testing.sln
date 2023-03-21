@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheInternetApp.Testing", "TheInternetApp.Testing\TheInternetApp.Testing.csproj", "{A03E10A9-096C-4FFE-A9D5-1135F15E6EAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A03E10A9-096C-4FFE-A9D5-1135F15E6EAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03E10A9-096C-4FFE-A9D5-1135F15E6EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03E10A9-096C-4FFE-A9D5-1135F15E6EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03E10A9-096C-4FFE-A9D5-1135F15E6EAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
