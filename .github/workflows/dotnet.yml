@@ -25,13 +25,11 @@ jobs:
     - name: Build
       run: dotnet build --no-restore --configuration Release
     - name: Test
-      run: dotnet test --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx" || true
+      run: dotnet test --no-build --verbosity normal --NUnit.TestOutputXml=TestResults
       
-    - name: Test Report
-      uses: dorny/test-reporter@v1
+    - name: Publish Test Results
+      uses: EnricoMi/publish-unit-test-result-action@v2
       if: always()
       with:
-        name: DotNET Tests
-        path: "**/test-results.trx"                            
-        reporter: dotnet-trx
-        fail-on-error: true
+        files: TestResults/*.xml
+  
