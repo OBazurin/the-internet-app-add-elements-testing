@@ -6,7 +6,9 @@ public class Tests
     [SetUp]
     public void Setup()
     {
-        _driver = new();
+        var chromeOptions = new ChromeOptions();
+        chromeOptions.AddArgument("--headless");
+        _driver = new(chromeOptions);
         _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
         _driver.Manage().Window.Maximize();
         _driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/add_remove_elements/");
