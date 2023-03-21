@@ -17,7 +17,7 @@ public class DriverHandler
         return _driver;
     }
 
-    private static void QuitDriver()
+    internal static void QuitDriver()
     {
         _driver?.Quit();
         _driver = null;
